@@ -34,14 +34,12 @@
         <i id="toggle-nav-btn-close" class="fa fa-times"></i>
       </label>
 
-      <a class="logo" href="/index.html"
-        ><img src="/assets/img/logo.svg" alt="logo"
-      /></a>
+      <a class="logo" href="/"><img src="/assets/img/logo.svg" alt="logo" /></a>
 
       <ul class="nav-links">
-        <li class="underline-hover"><a href="/">Oversigt</a></li>
-        <li class="underline-hover"><a href="/">Skole og Praktik</a></li>
-        <li class="underline-hover"><a href="/">Oplev Hansenberg</a></li>
+        <li><a href="/">Oversigt</a></li>
+        <li><a href="/">Skole og Praktik</a></li>
+        <li><a href="/">Oplev Hansenberg</a></li>
         <li><a class="signup-btn" href="/">Ansøg nu</a></li>
       </ul>
     </nav>
@@ -52,7 +50,7 @@
       <p>Design, udvikling og programmering af websites</p>
     </section>
 
-    <!-- Section [name] -->
+    <!-- Section [learn to code] -->
     <section class="learn-to-code">
       <article>
         <h2>
@@ -119,7 +117,7 @@
       </section>
 
       <!-- [FAQ 2] -->
-      <section class="faq-item active">
+      <section class="faq-item">
         <header>
           <h4>Adgangskrav til Grundforløb 2</h4>
           <a class="signup-btn show-more" href="/">Vis mere</a>
@@ -144,7 +142,7 @@
       </section>
 
       <!-- [FAQ 3] -->
-      <section class="faq-item active">
+      <section class="faq-item">
         <header>
           <h4>Webudvikler på Grundforløb 2</h4>
           <a class="signup-btn show-more" href="/">Vis mere</a>
@@ -169,7 +167,7 @@
       </section>
 
       <!-- [FAQ 4] -->
-      <section class="faq-item active">
+      <section class="faq-item">
         <header>
           <h4>Hvad er en svendeprøve?</h4>
           <a class="signup-btn show-more" href="/">Vis mere</a>
@@ -281,24 +279,47 @@
           type="text"
           placeholder="Navn"
           minlength="2"
-          class="contact-in-input"
+          maxlength="40"
+          required
         />
-        <input type="text" placeholder="Email" maxlength="30" />
+        <input type="email" placeholder="Email" required />
 
-        <input type="date" placeholder="Birthday" maxlength="30" />
+        <input type="date" placeholder="Fødselsdag" required />
 
-        <input type="text" placeholder="School" minlength="2" />
+        <input
+          type="text"
+          placeholder="Nuværende skole"
+          minlength="2"
+          required
+        />
 
-        <textarea placeholder="Besked" class="contact-in-textarea">
-Din ansøgning</textarea
-        >
+        <textarea
+          placeholder="Din ansøgning"
+          minlength="10"
+          required
+        ></textarea>
 
         <input type="submit" value="Send" class="signup-btn" />
       </form>
     </section>
 
-    <!-- Section [name] -->
-
     <!-- Footer -->
+    <footer>
+      <header>
+        <h3>Hansenberg</h3>
+        <p>Skovvangen 28</p>
+        <p>6000 Kolding</p>
+        <p>7932 0100</p>
+        <p>hansenberg@hansenberg.dk</p>
+      </header>
+
+      <figure>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-solid fa-phone"></i>
+      </figure>
+    </footer>
   </body>
 </html>
