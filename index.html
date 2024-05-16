@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Boilerplate</title>
+    <title>Stopprøve 2</title>
 
     <link
       rel="stylesheet"
@@ -59,7 +59,7 @@
         </h2>
 
         <p>
-          Vi er online 24-7 – vi søger information, handler, <br />
+          Vi er online 24-7 - vi søger information, handler, <br />
           kommunikerer og spiller på nettet.
         </p>
 
@@ -93,18 +93,17 @@
       </p>
 
       <!-- [FAQ 1] -->
-      <section class="faq-item active">
+      <section class="faq-item">
         <header>
           <h4>Fakta om Grundforløb 2</h4>
-          <a class="signup-btn show-more" href="/">Vis mere</a>
-          <a class="signup-btn show-less" href="/">Vis mindre</a>
+          <a class="signup-btn show-more" href="#">Vis mere</a>
         </header>
         <article>
           <p>Fakta</p>
           <p>
             Svendeprøven er den afsluttende eksamen, hvor en elev/lærling viser,
             hvad han eller hun har lært ved at fremstille et <br />
-            svendestykke, dvs. et produkt, som er karakteristisk for faget.
+            svendestykke, dvs. et produkt, som er karakteristisk for faget.
           </p>
           <p>
             Svendestykket bliver vurderet af skuemestre (censorer), der er
@@ -120,8 +119,7 @@
       <section class="faq-item">
         <header>
           <h4>Adgangskrav til Grundforløb 2</h4>
-          <a class="signup-btn show-more" href="/">Vis mere</a>
-          <a class="signup-btn show-less" href="/">Vis mindre</a>
+          <a class="signup-btn show-more" href="#">Vis mere</a>
         </header>
 
         <article>
@@ -129,7 +127,7 @@
           <p>
             Svendeprøven er den afsluttende eksamen, hvor en elev/lærling viser,
             hvad han eller hun har lært ved at fremstille et <br />
-            svendestykke, dvs. et produkt, som er karakteristisk for faget.
+            svendestykke, dvs. et produkt, som er karakteristisk for faget.
           </p>
           <p>
             Svendestykket bliver vurderet af skuemestre (censorer), der er
@@ -145,8 +143,7 @@
       <section class="faq-item">
         <header>
           <h4>Webudvikler på Grundforløb 2</h4>
-          <a class="signup-btn show-more" href="/">Vis mere</a>
-          <a class="signup-btn show-less" href="/">Vis mindre</a>
+          <a class="signup-btn show-more" href="#">Vis mere</a>
         </header>
 
         <article>
@@ -154,7 +151,7 @@
           <p>
             Svendeprøven er den afsluttende eksamen, hvor en elev/lærling viser,
             hvad han eller hun har lært ved at fremstille et <br />
-            svendestykke, dvs. et produkt, som er karakteristisk for faget.
+            svendestykke, dvs. et produkt, som er karakteristisk for faget.
           </p>
           <p>
             Svendestykket bliver vurderet af skuemestre (censorer), der er
@@ -170,8 +167,7 @@
       <section class="faq-item">
         <header>
           <h4>Hvad er en svendeprøve?</h4>
-          <a class="signup-btn show-more" href="/">Vis mere</a>
-          <a class="signup-btn show-less" href="/">Vis mindre</a>
+          <a class="signup-btn show-more" href="#">Vis mere</a>
         </header>
 
         <article>
@@ -279,12 +275,19 @@
           type="text"
           placeholder="Navn"
           minlength="2"
-          maxlength="40"
+          maxlength="50"
           required
         />
-        <input type="email" placeholder="Email" required />
+        <input
+          type="email"
+          placeholder="Email"
+          minlength="5"
+          maxlength="64"
+          autocomplete="email"
+          required
+        />
 
-        <input type="date" placeholder="Fødselsdag" required />
+        <input type="date" placeholder="Birthday" required />
 
         <input
           type="text"
@@ -296,6 +299,7 @@
         <textarea
           placeholder="Din ansøgning"
           minlength="10"
+          maxlength="150"
           required
         ></textarea>
 

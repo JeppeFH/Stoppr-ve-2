@@ -285,23 +285,12 @@ nav label {
   background-color: white;
   border: 2px solid black;
   margin-right: 10px;
+  color: #3e3e3e;
 }
 
 .faq-item .signup-btn:hover {
   background-color: #caa76e;
   transition: all 250ms ease-in-out;
-}
-
-.faq-item .show-less {
-  background-color: #e7be7e;
-  border: 2px solid white;
-  color: #3e3e3e;
-  display: none;
-}
-
-.faq-item .show-less:hover {
-  background-color: white;
-  border: 2px solid black;
 }
 
 .faq-item {
@@ -327,6 +316,7 @@ nav label {
   background-color: #435061;
   padding: 31px;
   display: none;
+  margin-bottom: 10px;
 }
 
 .faq-item.active article {
@@ -336,10 +326,20 @@ nav label {
 .faq-item.active header {
   background-color: #435061;
   color: white;
+  border-bottom: 2px solid #e7be7e;
 }
 
 .faq-item.active header h4 {
   color: #e7be7e;
+}
+
+.faq-item.active .signup-btn {
+  background-color: #e7be7e;
+  border: 2px solid white;
+}
+
+.faq-item.active .signup-btn:hover {
+  background-color: #ceaa70;
 }
 
 .faq-item article p {
@@ -416,6 +416,7 @@ nav label {
   grid-column: span 2;
   height: 246px;
   font-size: 1.6rem;
+  border: 2px solid black;
 }
 
 .mail-form h3 {
@@ -435,6 +436,10 @@ nav label {
   font-family: "Noto Sans", sans-serif;
   padding: 10px;
   font-size: 1.6rem;
+}
+
+.mail-form input:not(.signup-btn) {
+  border: 2px solid black;
 }
 
 .mail-form .signup-btn {
@@ -490,6 +495,35 @@ footer p {
 }
 
 /*Responsive*/
+@media screen and (max-width: 1103px) {
+  .learn-to-code {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .learn-to-code {
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .learn-to-code article {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .faq-item {
+    padding: 0 65px 0 65px;
+  }
+
+  .oplev-hansenberg article {
+    padding: 0 65px 0 65px;
+  }
+}
+
+/*Tablet*/
 @media screen and (max-width: 768px) {
   /*font size*/
   h1 {
@@ -516,17 +550,38 @@ footer p {
   footer {
     flex-direction: column;
   }
-}
 
-@media screen and (max-width: 1103px) {
-  .learn-to-code {
-    padding: 10px;
+  .faq-item .signup-btn {
+    font-size: 1.4rem;
+    padding: 11px 33px;
   }
 }
 
-@media screen and (max-width: 850px) {
-  .learn-to-code {
-    flex-direction: column;
-    padding: 0;
+/*Mobile*/
+@media screen and (max-width: 700px) {
+  /*font size*/
+  h1 {
+    font-size: 4.8rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2.8rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  .faq-item .signup-btn {
+    font-size: 1.3rem;
+    padding: 10px 32px;
   }
 }
